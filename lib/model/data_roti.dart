@@ -24,9 +24,9 @@ List<Data> datas = [
   Data(
     image: 'assets/image/bluder standar.png',
     nama: 'Bluder Single Standar',
-    deskripsi: 'Pembelian minimal 10 biji',
+    deskripsi: 'Roti Bluder Single ',
     harga: '12.000',
-    berat: '80 Gram',
+    berat: '80',
     experied: '7 - 9',
     stock: '180',
     daerah: 'KOTA MADIUN - MANGUHARJO, JAWA TIMUR',
@@ -34,7 +34,7 @@ List<Data> datas = [
   Data(
     image: 'assets/image/Bluder sobek.png',
     nama: 'Bluder Sobek',
-    deskripsi: 'Roti bluder Sobek',
+    deskripsi: 'Roti Bluder Sobek',
     harga: '36.000',
     berat: '250',
     experied: '7 - 9',
@@ -44,7 +44,7 @@ List<Data> datas = [
   Data(
     image: 'assets/image/bluder kasur.png',
     nama: 'Bluder Kasur',
-    deskripsi: 'Roti bluder Kasur',
+    deskripsi: 'Roti Bluder Kasur',
     harga: '84.000',
     berat: '500',
     experied: '7 - 9',
@@ -54,7 +54,7 @@ List<Data> datas = [
   Data(
     image: 'assets/image/bluder krumpul.png',
     nama: 'Bluder Krumpul',
-    deskripsi: 'Roti bluder Krumpul',
+    deskripsi: 'Roti Bluder Krumpul',
     harga: '60.000',
     berat: '375',
     experied: '7 - 9',

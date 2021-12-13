@@ -26,8 +26,8 @@ class _KontakScreenState extends State<KontakScreen> {
             Navigator.pop(context);
           },
           icon: FaIcon(
-            FontAwesomeIcons.angleLeft,
-            size: 35,
+            FontAwesomeIcons.arrowLeft,
+            size: 25,
           ),
         ),
       ),

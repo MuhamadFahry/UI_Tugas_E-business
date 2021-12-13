@@ -29,8 +29,8 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
             Navigator.pop(context);
           },
           icon: FaIcon(
-            FontAwesomeIcons.angleLeft,
-            size: 35,
+            FontAwesomeIcons.arrowLeft,
+            size: 25,
             color: Colors.black,
           ),
         ),

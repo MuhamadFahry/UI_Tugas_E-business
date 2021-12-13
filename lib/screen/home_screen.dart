@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_ebusiness/model/data_roti.dart';
 import 'package:project_ebusiness/screen/deskripsi_roti.dart';
-import 'package:project_ebusiness/screen/kontak_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -168,27 +166,20 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       child: TextField(
                         style: GoogleFonts.lato(
-                          fontSize: 16,
+                          fontSize: 18,
                         ),
                         decoration: InputDecoration(
                           filled: true,
                           fillColor: Colors.white,
                           enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
-                              width: 3,
-                            ),
                           ),
                           focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(50),
-                            borderSide: BorderSide(
-                              color: Colors.blue,
-                              width: 3,
-                            ),
                           ),
                           hintText: 'Cari roti',
-                          hintStyle: TextStyle(
-                            fontSize: 16,
+                          hintStyle: GoogleFonts.lato(
+                            fontSize: 18,
                           ),
                           prefixIcon: Padding(
                             padding: EdgeInsetsDirectional.only(
