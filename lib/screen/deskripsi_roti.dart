@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:project_ebusiness/model/data_roti.dart';
+import 'package:project_ebusiness/model/data_json_roti.dart';
 import 'package:project_ebusiness/screen/kontak_screen.dart';
 
 class DeskripsiScreen extends StatefulWidget {
-  final Data datas;
+  final DataRoti datas;
   const DeskripsiScreen({Key? key, required this.datas}) : super(key: key);
 
   @override
@@ -48,13 +48,13 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
         children: [
           //--------- start bagian gambar produk ---------
           Container(
-            height: 250,
             width: lebarLayar,
             color: Colors.white,
             child: Column(
               children: [
-                Image.asset(
-                  widget.datas.image.toString(),
+                Image.network(
+                  widget.datas.url.toString(),
+                  width: 340,
                   fit: BoxFit.cover,
                 )
               ],
@@ -63,16 +63,23 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
           //--------- end bagian gambar produk ---------
           Container(
             margin: EdgeInsets.only(
-              top: 230,
+              top: 340,
             ),
             height: tinggiLayar,
             width: lebarLayar,
             decoration: BoxDecoration(
-              color: Color(0XFFEAEAEA),
+              color: Colors.white,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(30),
                 topRight: Radius.circular(30),
               ),
+              boxShadow: [
+                BoxShadow(
+                  offset: Offset(0, -3),
+                  color: Colors.black26,
+                  blurRadius: 4,
+                ),
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -102,14 +109,14 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
                 //--------- end bagian teks dekripsi ---------
                 //--------- start bagian deskripsi produk ---------
                 Container(
-                  height: tinggiLayar * 0.45,
+                  height: tinggiLayar * 0.32,
                   child: Padding(
                     padding: EdgeInsets.all(25),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          widget.datas.deskripsi.toString(),
+                          widget.datas.detail.toString(),
                           style: GoogleFonts.lato(
                             letterSpacing: 1,
                             fontSize: 18,
@@ -132,42 +139,54 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
                         SizedBox(
                           height: 12,
                         ),
-                        Text(
-                          'Berat Produk : ${widget.datas.berat.toString()}/gram',
-                          style: GoogleFonts.lato(
-                            letterSpacing: 1,
-                            fontSize: 16,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Stock Produk : ${widget.datas.stock.toString()}',
-                          style: GoogleFonts.lato(
-                            letterSpacing: 1,
-                            fontSize: 16,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Penyimpanan : ${widget.datas.experied.toString()}/hari',
-                          style: GoogleFonts.lato(
-                            letterSpacing: 1,
-                            fontSize: 16,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Dikirim Dari : ${widget.datas.daerah.toString()}',
-                          style: GoogleFonts.lato(
-                            letterSpacing: 1,
-                            fontSize: 16,
-                          ),
+                        // Text(
+                        //   'Berat Produk : ${widget.datas.berat.toString()}/gram',
+                        //   style: GoogleFonts.lato(
+                        //     letterSpacing: 1,
+                        //     fontSize: 16,
+                        //   ),
+                        // ),
+                        // SizedBox(
+                        //   height: 8,
+                        // ),
+                        // Text(
+                        //   'Stock Produk : ${widget.datas.stock.toString()}',
+                        //   style: GoogleFonts.lato(
+                        //     letterSpacing: 1,
+                        //     fontSize: 16,
+                        //   ),
+                        // ),
+                        // SizedBox(
+                        //   height: 8,
+                        // ),
+                        // Text(
+                        //   'Penyimpanan : ${widget.datas.experied.toString()}/hari',
+                        //   style: GoogleFonts.lato(
+                        //     letterSpacing: 1,
+                        //     fontSize: 16,
+                        //   ),
+                        // ),
+                        // SizedBox(
+                        //   height: 8,
+                        // ),
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.location_on,
+                              size: 15,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              'kota madiun - manguharjo, jawa timur'
+                                  .toUpperCase(),
+                              style: GoogleFonts.lato(
+                                letterSpacing: 1,
+                                fontSize: 15,
+                              ),
+                            ),
+                          ],
                         ),
                       ],
                     ),

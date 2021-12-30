@@ -31,6 +31,7 @@ dependencies:
   flutter_speed_dial: ^4.4.0
   font_awesome_flutter: ^9.2.0
   url_launcher: ^6.0.10
+  animated_splash_screen: ^1.1.0
 
 dev_dependencies:
   flutter_test:

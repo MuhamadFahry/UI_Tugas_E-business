@@ -43,12 +43,14 @@ class _BottomScreenState extends State<BottomScreen> {
             label: 'About',
           ),
         ],
+        elevation: 1,
         currentIndex: _selectIndex,
         onTap: _onTapItem,
-        selectedItemColor: Colors.teal,
+        selectedItemColor: Color(0XFF9B4B26),
         showUnselectedLabels: true,
         type: BottomNavigationBarType.fixed,
-        iconSize: 30,
+        iconSize: 25,
+        backgroundColor: Colors.white,
       ),
     );
   }

@@ -106,8 +106,9 @@ class _KontakScreenState extends State<KontakScreen> {
                             ),
                             child: ListTile(
                               onTap: () => Kontak.openWhatsapp(
-                                phoneNumber: data.kontak,
-                              ),
+                                  phoneNumber: data.kontak,
+                                  subject:
+                                      'Halo Kak, Saya Ingin Melakukan Pemesanan Roti Bluder Nya'),
                               leading: FaIcon(
                                 FontAwesomeIcons.whatsapp,
                                 size: 30,

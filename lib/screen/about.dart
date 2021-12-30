@@ -15,13 +15,13 @@ class _AboutScreenState extends State<AboutScreen> {
     return Scaffold(
       backgroundColor: Color(0XFFEAEAEA),
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
-          'About',
+          'Informasi',
           style: GoogleFonts.lato(
             fontWeight: FontWeight.bold,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
         elevation: 0,
