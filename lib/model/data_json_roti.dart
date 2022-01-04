@@ -23,6 +23,9 @@ class DataRoti {
       nama: json['nama'],
       detail: json['detail'],
       harga: json['harga'],
+      beratP: json['berat_produk'],
+      stockP: json['stock_produk'],
+      penyimpanan: json['masa_simpan'],
     );
   }
 }

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:project_ebusiness/model/data_json_roti.dart';
-import 'package:project_ebusiness/screen/kontak_screen.dart';
 
 class DeskripsiScreen extends StatefulWidget {
   final DataRoti datas;
@@ -109,7 +108,7 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
                 //--------- end bagian teks dekripsi ---------
                 //--------- start bagian deskripsi produk ---------
                 Container(
-                  height: tinggiLayar * 0.32,
+                  height: tinggiLayar * 0.3,
                   child: Padding(
                     padding: EdgeInsets.all(25),
                     child: Column(
@@ -139,36 +138,36 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
                         SizedBox(
                           height: 12,
                         ),
-                        // Text(
-                        //   'Berat Produk : ${widget.datas.berat.toString()}/gram',
-                        //   style: GoogleFonts.lato(
-                        //     letterSpacing: 1,
-                        //     fontSize: 16,
-                        //   ),
-                        // ),
-                        // SizedBox(
-                        //   height: 8,
-                        // ),
-                        // Text(
-                        //   'Stock Produk : ${widget.datas.stock.toString()}',
-                        //   style: GoogleFonts.lato(
-                        //     letterSpacing: 1,
-                        //     fontSize: 16,
-                        //   ),
-                        // ),
-                        // SizedBox(
-                        //   height: 8,
-                        // ),
-                        // Text(
-                        //   'Penyimpanan : ${widget.datas.experied.toString()}/hari',
-                        //   style: GoogleFonts.lato(
-                        //     letterSpacing: 1,
-                        //     fontSize: 16,
-                        //   ),
-                        // ),
-                        // SizedBox(
-                        //   height: 8,
-                        // ),
+                        Text(
+                          'Berat Produk : ${widget.datas.beratP.toString()}/gram',
+                          style: GoogleFonts.lato(
+                            letterSpacing: 1,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          'Stock Produk : ${widget.datas.stockP.toString()}',
+                          style: GoogleFonts.lato(
+                            letterSpacing: 1,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          'Penyimpanan : ${widget.datas.penyimpanan.toString()}/hari',
+                          style: GoogleFonts.lato(
+                            letterSpacing: 1,
+                            fontSize: 16,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
                         Row(
                           children: [
                             Icon(
@@ -193,59 +192,6 @@ class _DeskripsiScreenState extends State<DeskripsiScreen> {
                   ),
                 ),
                 //--------- end bagian deskripsi produk ---------
-                //--------- start bagian button pemesanan ---------
-                Expanded(
-                  child: Container(
-                    child: Column(
-                      children: [
-                        Padding(
-                          padding: EdgeInsets.only(
-                            top: 5,
-                            left: 25,
-                            right: 25,
-                          ),
-                          child: ElevatedButton(
-                            onPressed: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => KontakScreen(),
-                                ),
-                              );
-                            },
-                            child: ListTile(
-                              leading: FaIcon(
-                                FontAwesomeIcons.shoppingCart,
-                                size: 30,
-                                color: Colors.white,
-                              ),
-                              trailing: FaIcon(
-                                FontAwesomeIcons.arrowRight,
-                                size: 25,
-                                color: Colors.white,
-                              ),
-                              title: Text(
-                                'Order Now',
-                                style: GoogleFonts.lato(
-                                  letterSpacing: 1,
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              primary: Color(0XFF26AE60),
-                              shape: StadiumBorder(),
-                              elevation: 3,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                //--------- end bagian button pemesanan ---------
               ],
             ),
           ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:project_ebusiness/screen/about.dart';
 import 'package:project_ebusiness/screen/home_screen.dart';
+import 'package:project_ebusiness/screen/kontak_screen.dart';
 
 class BottomScreen extends StatefulWidget {
   const BottomScreen({Key? key}) : super(key: key);
@@ -13,6 +15,7 @@ class _BottomScreenState extends State<BottomScreen> {
   int _selectIndex = 0;
   List<Widget> _widgetOptions = [
     HomeScreen(),
+    KontakScreen(),
     AboutScreen(),
   ];
 
@@ -35,6 +38,12 @@ class _BottomScreenState extends State<BottomScreen> {
               Icons.home,
             ),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: FaIcon(
+              FontAwesomeIcons.shoppingCart,
+            ),
+            label: 'Order',
           ),
           BottomNavigationBarItem(
             icon: Icon(

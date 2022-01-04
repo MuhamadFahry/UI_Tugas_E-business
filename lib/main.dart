@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         duration: 3000,
         splash: 'assets/image/cokro teks.png',
         nextScreen: BottomScreen(),
-        splashTransition: SplashTransition.fadeTransition,
+        // splashTransition: SplashTransition.fadeTransition,
         backgroundColor: Color(0XFF9B4B26),
       ),
     );

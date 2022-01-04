@@ -18,19 +18,6 @@ class _KontakScreenState extends State<KontakScreen> {
     double lebarLayar = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: Color(0XFFEAEAEA),
-      appBar: AppBar(
-        elevation: 0,
-        backgroundColor: Colors.black,
-        leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: FaIcon(
-            FontAwesomeIcons.arrowLeft,
-            size: 25,
-          ),
-        ),
-      ),
       body: Stack(
         children: [
           //--------- start bagian gambar bluder ---------

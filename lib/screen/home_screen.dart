@@ -162,7 +162,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 Expanded(
                                                   child: Image.network(
                                                     roti.url.toString(),
-                                                    width: 192,
+                                                    width: 190,
                                                     fit: BoxFit.cover,
                                                   ),
                                                 ),
